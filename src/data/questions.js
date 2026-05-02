@@ -1,0 +1,65 @@
+export const quadrants = {
+  1: {
+    id: 1,
+    name: '내부 배움',
+    shortName: '자기 이해',
+    question: '나는 누구인가?',
+    keywords: '재능 인식, 패턴 발견, 신념 해체',
+    color: '#8B5CF6',
+  },
+  2: {
+    id: 2,
+    name: '외부 배움',
+    shortName: '세계 이해',
+    question: '세상은 어떻게 작동하는가?',
+    keywords: '관계 학습, 피드백 수용, 환경 읽기',
+    color: '#3B82F6',
+  },
+  3: {
+    id: 3,
+    name: '내부 일',
+    shortName: '방향 설정',
+    question: '나는 어디로 가는가?',
+    keywords: '비전, 우선순위, 에너지 관리',
+    color: '#10B981',
+  },
+  4: {
+    id: 4,
+    name: '외부 일',
+    shortName: '실행/영향',
+    question: '어떻게 세상에 기여하는가?',
+    keywords: '실행, 리더십, 시스템 구축',
+    color: '#F59E0B',
+  },
+};
+
+export const questions = [
+  { id: 1, quadrant: 1, text: '지난 한 달 안에, 내 행동의 반복 패턴을 스스로 알아차린 적이 있다', reverse: false },
+  { id: 2, quadrant: 1, text: '나를 제한하는 생각이 떠올랐을 때, 그것이 사실인지 의심해본 적이 있다', reverse: false },
+  { id: 3, quadrant: 1, text: '내가 에너지를 얻는 활동과 잃는 활동을 구체적으로 말할 수 있다', reverse: false },
+  { id: 4, quadrant: 1, text: '내면의 욕구가 무엇인지 다른 사람에게 설명할 수 있다', reverse: false },
+  { id: 5, quadrant: 1, text: '과거의 특정 경험이 지금 나의 어떤 반응과 연결되는지 예시를 들 수 있다', reverse: false },
+  { id: 6, quadrant: 2, text: '최근에 받은 불편한 피드백 중, 수용해서 행동을 바꾼 것이 있다', reverse: false },
+  { id: 7, quadrant: 2, text: '관계에서 같은 갈등이 반복될 때 “상대방의 입장에서” 원인을 찾아본 적이 있다', reverse: false },
+  { id: 8, quadrant: 2, text: '나와 의견이 다른 사람의 말은 대체로 틀렸다고 느낀다', reverse: true },
+  { id: 9, quadrant: 2, text: '내가 속한 환경이 나의 판단에 미치는 영향을 구체적으로 인식한다', reverse: false },
+  { id: 10, quadrant: 2, text: '최근 실패 경험에서 “다음에는 이렇게 하겠다”는 구체적 교훈을 도출한 적이 있다', reverse: false },
+  { id: 11, quadrant: 3, text: '올해 내가 가장 중요하게 여기는 것 3가지를 즉시 말할 수 있다', reverse: false },
+  { id: 12, quadrant: 3, text: '이번 주에 “급하지만 중요하지 않은 일”을 의식적으로 미룬 적이 있다', reverse: false },
+  { id: 13, quadrant: 3, text: '에너지가 떨어지는 신호를 감지하고 쉬거나 전환한 경험이 최근에 있다', reverse: false },
+  { id: 14, quadrant: 3, text: '해야 할 일이 너무 많아서 정작 하고 싶은 일은 항상 뒤로 밀린다', reverse: true },
+  { id: 15, quadrant: 3, text: '3년 후 나의 모습을 구체적인 장면으로 그릴 수 있다', reverse: false },
+  { id: 16, quadrant: 4, text: '지난 한 달 안에 계획한 일을 실제로 마무리한 것이 있다', reverse: false },
+  { id: 17, quadrant: 4, text: '내 강점을 활용해 누군가에게 도움을 준 구체적인 경험이 최근에 있다', reverse: false },
+  { id: 18, quadrant: 4, text: '반복되는 일을 자동화하거나 시스템화한 것이 하나 이상 있다', reverse: false },
+  { id: 19, quadrant: 4, text: '내 경험이나 지식을 글, 발표, 대화 등으로 외부에 공유한 적이 최근에 있다', reverse: false },
+  { id: 20, quadrant: 4, text: '주변 사람이 “당신 덕분에 변화했다”는 취지의 말을 한 적이 있다', reverse: false },
+];
+
+export const likert = [
+  { value: 1, label: '전혀 아니다' },
+  { value: 2, label: '별로 아니다' },
+  { value: 3, label: '보통이다' },
+  { value: 4, label: '그렇다' },
+  { value: 5, label: '매우 그렇다' },
+];

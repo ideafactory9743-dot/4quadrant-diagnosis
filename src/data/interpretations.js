@@ -1,0 +1,143 @@
+export const levelLabels = {
+  mature: { min: 80, emoji: '🟢', label: '성숙', description: '이 영역은 충분히 성장했습니다. 다른 분면으로 확장할 때입니다.' },
+  growing: { min: 60, emoji: '🟡', label: '성장중', description: '좋은 기반이 있습니다. 의도적인 연습으로 더 깊어질 수 있습니다.' },
+  exploring: { min: 40, emoji: '🟠', label: '탐색중', description: '이 영역을 인식하고 있지만, 아직 체화되지 않았습니다.' },
+  undiscovered: { min: 0, emoji: '🔴', label: '미발견', description: '아직 이 영역을 충분히 탐색하지 못했습니다. 여기서 시작하면 큰 변화가 가능합니다.' },
+};
+
+export const ctas = {
+  'self-study': {
+    title: '나를 발견하는 4주: 셀프탐구 학습지',
+    description: '반복 패턴과 에너지 흐름을 기록하며 자기 이해의 언어를 세워보세요.',
+    url: '#self-study',
+  },
+  'strength-basic': {
+    title: '강점 기본과정',
+    description: '강점 언어를 배우고 내면의 나침반을 다시 정렬하는 입문 과정입니다.',
+    url: '#strength-basic',
+  },
+  'vision-coaching': {
+    title: '방향을 잡는 비전 코칭 프로그램',
+    description: '중요한 것과 급한 것을 구분하고 3년 후 장면을 실행 계획으로 바꿉니다.',
+    url: '#vision-coaching',
+  },
+  ecosystem: {
+    title: '생태계 참여 안내',
+    description: '타인과의 피드백, 협업, 실험을 통해 배움을 외부 세계와 연결합니다.',
+    url: '#ecosystem',
+  },
+  challenge: {
+    title: '작은 실행 챌린지 시작하기',
+    description: '작은 산출물을 세상에 내놓고 실행 근육을 회복하는 7일 챌린지입니다.',
+    url: '#challenge',
+  },
+  deep: {
+    title: '심화 코칭',
+    description: '이미 균형 잡힌 성장을 기반으로 가장 즐거운 분면을 더 깊게 확장하세요.',
+    url: '#deep-coaching',
+  },
+  meeting: {
+    title: '무료 사전미팅',
+    description: '지금의 출발점을 함께 확인하고 가장 끌리는 분면부터 성장 경로를 설계합니다.',
+    url: '#meeting',
+  },
+};
+
+export const patterns = [
+  {
+    id: 1,
+    condition: (s) => s[1] >= 70 && s[2] < 70 && s[3] < 70 && s[4] < 70,
+    pattern: '1↑ 2↓ 3↓ 4↓',
+    message: '자기 이해는 깊지만 아직 세상과 연결되지 않았어요.',
+    growthPath: [2, 3, 4],
+    ctaType: 'self-study',
+  },
+  {
+    id: 2,
+    condition: (s) => s[4] >= 70 && s[1] < 70 && s[2] < 70 && s[3] < 70,
+    pattern: '4↑ 1↓ 2↓ 3↓',
+    message: '행동력은 뛰어나지만 내면의 나침반이 부족해요.',
+    growthPath: [1, 3, 2],
+    ctaType: 'strength-basic',
+  },
+  {
+    id: 3,
+    condition: (s) => s[1] >= 70 && s[2] >= 70 && s[3] < 70 && s[4] < 70,
+    pattern: '1↑ 2↑ 3↓ 4↓',
+    message: '배움은 풍부하지만 실행으로 연결되지 않고 있어요.',
+    growthPath: [3, 4],
+    ctaType: 'vision-coaching',
+  },
+  {
+    id: 4,
+    condition: (s) => s[3] >= 70 && s[4] >= 70 && s[1] < 70 && s[2] < 70,
+    pattern: '3↑ 4↑ 1↓ 2↓',
+    message: '실행력은 강하지만 근본적인 자기 이해 없이 달리고 있어요.',
+    growthPath: [1, 2],
+    ctaType: 'self-study',
+  },
+  {
+    id: 5,
+    condition: (s) => s[1] >= 70 && s[3] >= 70 && s[2] < 70 && s[4] < 70,
+    pattern: '1↑ 3↑ 2↓ 4↓',
+    message: '내면은 단단하지만 세상과 소통하는 연습이 필요해요.',
+    growthPath: [2, 4],
+    ctaType: 'ecosystem',
+  },
+  {
+    id: 6,
+    condition: (s) => s[2] >= 70 && s[4] >= 70 && s[1] < 70 && s[3] < 70,
+    pattern: '2↑ 4↑ 1↓ 3↓',
+    message: '외부에서 잘 배우고 실행하지만, 자기만의 방향이 흐려요.',
+    growthPath: [1, 3],
+    ctaType: 'strength-basic',
+  },
+  {
+    id: 7,
+    condition: (s) => s[1] >= 70 && s[2] >= 70 && s[3] >= 70 && s[4] < 70,
+    pattern: '1↑ 2↑ 3↑ 4↓',
+    message: '준비는 충분합니다. 이제 세상에 내놓을 차례예요.',
+    growthPath: [4],
+    ctaType: 'challenge',
+  },
+  {
+    id: 8,
+    condition: (s) => s[2] >= 70 && s[3] >= 70 && s[4] >= 70 && s[1] < 70,
+    pattern: '2↑ 3↑ 4↑ 1↓',
+    message: '많은 것을 해내고 있지만 “왜 하는지”가 흐릿할 수 있어요.',
+    growthPath: [1],
+    ctaType: 'self-study',
+  },
+  {
+    id: 9,
+    condition: (s) => s[1] >= 70 && s[3] >= 70 && s[4] >= 70 && s[2] < 70,
+    pattern: '1↑ 3↑ 4↑ 2↓',
+    message: '독립적으로 잘 움직이지만 타인과의 배움이 부족할 수 있어요.',
+    growthPath: [2],
+    ctaType: 'ecosystem',
+  },
+  {
+    id: 10,
+    condition: (s) => s[1] >= 70 && s[2] >= 70 && s[4] >= 70 && s[3] < 70,
+    pattern: '1↑ 2↑ 4↑ 3↓',
+    message: '여러 방향으로 움직이지만 우선순위 정리가 필요해요.',
+    growthPath: [3],
+    ctaType: 'vision-coaching',
+  },
+  {
+    id: 11,
+    condition: (s) => [1, 2, 3, 4].every((q) => s[q] >= 70),
+    pattern: '전체 ↑',
+    message: '4분면이 고르게 발달했습니다. 가장 즐거운 분면에서 깊이를 더하세요.',
+    growthPath: [],
+    ctaType: 'deep',
+  },
+  {
+    id: 12,
+    condition: (s) => [1, 2, 3, 4].every((q) => s[q] < 70),
+    pattern: '전체 ↓',
+    message: '지금이 성장 여정의 출발점입니다. 가장 끌리는 분면부터 시작하세요.',
+    growthPath: [],
+    ctaType: 'meeting',
+  },
+];

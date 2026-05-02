@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g1" cx="20%" cy="15%" r="70%">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".48"/>
+      <stop offset=".55" stop-color="#1E293B" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="88%" cy="80%" r="55%">
+      <stop offset="0" stop-color="#F59E0B" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <g transform="translate(760 130)">
+    <rect x="0" y="0" width="320" height="170" rx="36" fill="#111827" opacity=".82" stroke="#8B5CF6" stroke-opacity=".55"/>
+    <rect x="0" y="194" width="320" height="170" rx="36" fill="#111827" opacity=".82" stroke="#10B981" stroke-opacity=".55"/>
+    <rect x="-344" y="96" width="320" height="170" rx="36" fill="#111827" opacity=".82" stroke="#3B82F6" stroke-opacity=".55"/>
+    <circle cx="272" cy="48" r="10" fill="#8B5CF6"/>
+    <circle cx="-72" cy="144" r="10" fill="#3B82F6"/>
+    <circle cx="272" cy="242" r="10" fill="#10B981"/>
+    <circle cx="-72" cy="338" r="10" fill="#F59E0B"/>
+  </g>
+  <text x="88" y="160" fill="#F8FAFC" font-family="system-ui, Apple SD Gothic Neo, sans-serif" font-size="42" font-weight="800">성장 4분면 자가진단</text>
+  <text x="88" y="275" fill="#F8FAFC" font-family="system-ui, Apple SD Gothic Neo, sans-serif" font-size="74" font-weight="900">당신은 성장의</text>
+  <text x="88" y="362" fill="#F8FAFC" font-family="system-ui, Apple SD Gothic Neo, sans-serif" font-size="74" font-weight="900">어디쯤에 있나요?</text>
+  <text x="88" y="448" fill="#CBD5E1" font-family="system-ui, Apple SD Gothic Neo, sans-serif" font-size="32" font-weight="500">20개 질문으로 알아보는 나의 성장 4분면</text>
+</svg>
