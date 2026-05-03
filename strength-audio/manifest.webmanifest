@@ -1,0 +1,1 @@
+{"name":"강점 오디오 운동 플레이어","short_name":"강점오디오","description":"운동 중 강점 교재 음성파일을 배속 조절하며 듣는 플레이어","start_url":"./index.html","scope":"./","display":"standalone","orientation":"portrait","background_color":"#090b10","theme_color":"#090b10","icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
